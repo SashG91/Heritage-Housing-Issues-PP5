@@ -3,7 +3,6 @@ This file and its contents has been informed and adapted
 from the Churnometer Walkthrough Project.
 '''
 
-
 import streamlit as st
 
 def hypothesis_body():

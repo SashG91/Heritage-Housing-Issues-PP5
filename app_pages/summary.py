@@ -1,5 +1,6 @@
 '''
-This file and its contents and has been adapted from the Churnometer Walkthrough Project
+This file and its contents has been informed and adapted 
+from the Churnometer Walkthrough Project.
 '''
 
 def summary_body():
@@ -41,7 +42,7 @@ def summary_body():
         "* Perform an extensive hyperparameter search for a given algorithm.\n\n"
         )
 
-        st.info(
+    st.info(
         "**Dataset Description Table**\n\n"
         " --- \n"
         "|Variable|Meaning|Units|\n"

@@ -16,5 +16,6 @@ def hypothesis_body():
         "We could possible confirm this with a correlation analysis between GarageArea and SalePrice can show this relationship.\n\n"
     )
 
+    # Validation of hypotheses
     st.write("---")
     st.write("### Hypothesis Validation")

@@ -12,8 +12,8 @@ def hypothesis_body():
         "The following are the hypotheses that I put forward for this project:\n\n"
         "1. I assume that a house with greater OverallQual would sell for a higher price.\n"
         "We could possible confirm this with a correlation analysis between OverallQual and SalePrice.\n\n"
-        "2. I further assume that a house with a bigger garage sells for a higher price.\n"
-        "We could possible confirm this with a correlation analysis between GarageArea and SalePrice can show this relationship.\n\n"
+        "2. I further assume that a house with a greater GrLivArea sells for a higher price.\n"
+        "We could possible confirm this with a correlation analysis between GrLivArea and SalePrice can show this relationship.\n\n"
     )
 
     # Validation of hypotheses

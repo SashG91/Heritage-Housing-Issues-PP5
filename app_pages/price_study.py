@@ -62,3 +62,29 @@ def page_sale_price_study_body():
         f" correlation study, do show a strong correlation and hence"
         f" possibly a strong predictive power for sale price\n"
     )
+
+    # "EDA on the Correlated Variable List" section
+    df_eda = df.filter(corr_var_list + ['SalePrice'])
+
+    # Individual plots per variable
+    if st.checkbox("Variable correlation Sale Price"):
+        variable_correlation_to_sale_price(df_eda, corr_var_list)
+
+
+def variable_correlation_to_sale_price(df_eda, corr_var_list):
+    # function based on the "sale price study" notebook
+    # "Visualize correlation to Sale Price" section
+    target_var = 'SalePrice'
+    for col in corr_var_list:
+        plot_numerical(df_eda, col, target_var)
+        st.write("\n\n")
+
+
+def plot_numerical(df, col, target_var):
+    # function based on "sale price study" notebook
+    # "Visualize correlation to Sale Price" section
+
+    fig, axes = plt.subplots(figsize=(15, 8))
+    sns.regplot(data=df, x=col, y=target_var)
+    plt.title(f"{col}", fontsize=20)
+    st.pyplot(fig)  # st.pyplot() renders image, in notebook is plt.show()

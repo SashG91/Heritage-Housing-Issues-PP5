@@ -3,23 +3,28 @@ This file and its contents have been informed and adapted
 from the Churnometer Walkthrough Project 2.
 '''
 
-# load data
+import streamlit as st
 
-# The variables that correlate to Sale Price, that will be found through the Variable Study notebook
+from src.file_management import load_housing_price_data
 
-# inspect data
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set_style("whitegrid")
 
-# Correlation Study Summary
+def page_sale_price_study_body():
 
-# Correlation Study
+    # load data
+    df = load_housing_price_data()
 
-# Code to be copied from "sale price study" notebook
-# "EDA on the Correlated Variable List" section
+    # hard copied from sale price study notebook
+    # The 5 variables that correlate to Sale Price
+    # These variables will be tested on strength to predicting Sale Price
+    corr_var_list = ['1stFlrSF', 'GarageArea', 'GrLivArea', 'OverallQual', 'TotalBsmtSF', 'YearBuilt']
 
-# Individual plots per variable
-
-# function created using "sale price study" notebook
-# "Visualize variable correlation to Sale Price" section
-
-# function to be created using "sale price study" notebook
-# "Visualize variable correlation to Sale Price" section
+    st.write("### House Sale Price Study")
+    st.info(
+        f"* The client is interested in discovering how the house attributes "
+        f"correlate with the sale price.\n"
+        f"* Therefore, the client expects data visualizations of the "
+        f"correlated variables against the sale price to show that."
+        )

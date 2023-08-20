@@ -91,3 +91,77 @@ def predict_inherited_house_price(price_pipe, price_features):
 def check_variables_for_UI(price_features):
     import itertools
 
+# Widget inputs are the features used
+    #  for all pipelines
+    # We combine them only using unique values
+    combined_features = set(
+        list(
+            itertools.chain(price_features)
+            )
+        )
+    st.write(f"* There are {len(combined features)} features "
+             f"for the UI: \n\n {combined features}")
+
+
+def DrawInputsWidgets():
+
+    # Dataset load
+    df = load_clean_data("clean")
+    percentageMin, percentageMax = 0.4, 2.0
+
+    # Here we create input widgets for all focused features
+    col1, col2 = st.beta_columns(2)
+    col3, col4 = st.beta_columns(2)
+   
+    # Features to feed the ML pipeline
+    # - values copied from check_variables_for_UI() result
+    # '1stFlrSF', 'GarageArea', 'GrLivArea', 'YearBuilt'
+ 
+    # create empty DataFrame, which will be the live data
+    X_live = pd.DataFrame([], index=[0])
+
+    # from here on we draw the widget based on the variable
+    # type (numerical or categorical) and set initial values
+    with col1:
+        feature = "1stFlrSF"
+        st_widget = st.number_input(
+            label=feature,
+            min_value=df[feature].min()*percentageMin,
+            max_value=df[feature].max()*percentageMax,
+            value=df[feature].median()
+            )
+        X_live[feature] = st_widget
+
+    with col2:
+        feature = "GrLivArea"
+        st_widget = st.number_input(
+            label=feature,
+            min_value=df[feature].min()*percentageMin,
+            max_value=df[feature].max()*percentageMax,
+            value=df[feature].median()
+            )
+        X_live[feature] = st_widget
+
+    with col3:
+        feature = "GarageArea"
+        st_widget = st.number_input(
+            label=feature,
+            min_value=df[feature].min()*percentageMin,
+            max_value=df[feature].max()*percentageMax,
+            value=df[feature].median()
+            )
+        X_live[feature] = st_widget
+
+    with col4:
+        feature = "YearBuilt"
+        st_widget = st.number_input(
+            label=feature,
+            min_value=df[feature].min()*percentageMin,
+            max_value=df[feature].max()*percentageMax,
+            value=df[feature].median()
+            )
+        X_live[feature] = st_widget
+
+    st.write(X_live)
+
+    return X_live

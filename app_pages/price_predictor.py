@@ -24,3 +24,17 @@ def page_predict_sale_price_body():
     y_test = pd.read_csv(f"{path}/y_test.csv")
 
     st.write("### ML Pipeline: Predict House Sale Price")
+
+    # display pipeline training summary conclusions
+    st.info(
+        f"* We used Linear Regressor model to predict sale price "
+        f"for a single property\n"
+        f"* Both feature selection and PCA produced similar results and was found to meet "
+        f"business requirement 1. By a small margin, feature selection "
+        f"gave better performance. Therefore, the best pipeline to use will be that "
+        f"of feature selection.\n"
+        f"* Feature selection achieved an R2 Score: 0.97 on the train set and "
+        f"an R2 Score: 0.78 on the test set respectively.\n"
+        f"* The clients requirement was for an R2 Score of 0.75\n"
+        )
+    st.write("---")

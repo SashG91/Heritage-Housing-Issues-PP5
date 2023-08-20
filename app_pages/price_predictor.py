@@ -1,6 +1,6 @@
 '''
-This file and its contents has been informed and adapted 
-from the Churnometer Walkthrough Project.
+This file and its contents have been informed and adapted 
+from the Churnometer Walkthrough Project 2.
 '''
 
 # load predict sale price files

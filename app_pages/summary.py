@@ -1,106 +1,39 @@
 '''
-This file and its contents has been informed and adapted 
-from the Churnometer Walkthrough Project.
+This file and its contents have been informed and adapted 
+from the Churnometer Walkthrough Project 2.
 '''
 
-def summary_body():
+import streamlit as st
+
+def page_summary_body():
+
+    st.write("### Quick Project Summary")
+
+    # "Dataset Content" section
     st.info(
-        "## Introduction\n\n"
-        "This is the final project requirement for my \n"
-        "Code Institute Full Stack Developer program. The project aims at\n"
-        "targeting topics of Python applications, Deep Learning and Machine Learning\n"
-        "business case analysis, API integration and dashboard generation\n"
-        "through the use of Streamlit.\n\n   "
+        f"**Project Dataset**\n"
+        f"* The project dataset was sourced from **[Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data)**.\n"
+        f"* The full dataset consisted of almost 1.5 thousand rows and represents housing records from Ames, Iowa. "
+        f"The dataset typically represents multiple house profiles or aspects of a property "
+        f"ie. Year built, Floor Areas, Garage, Basement, Kitchen, Lot, Porch "
+        f"and the respective sale price, for houses that were built between years 1872 and 2010.")
 
-        "## The Project Objective\n\n"
-        "The objective is to produce a Machine Learning model\n"
-        "that can use derived features to predict the sale price of a house in Ames, Iowa.\n\n"
-
-        "## Project Dataset\n"
-        "A public dataset sourced from Kaggle showing house prices for Ames, Iowa,\n"
-        "will be used for this project. The dataset consists of close to 1,460 home listings\n"
-        "that are linked with 24 variables that represent the residential\n"
-        "homes in Ames.\n\n"
-        "The dataset contains information on the house's features, such as\n"
-        "number of bedrooms, bathrooms, and size, as well as\n"
-        "lot information, such as the size / shape of the lot, and\n"
-        "relevant details like the age of the house, it's condition, and\n"
-        "location.\n\n"
-        "This dataset will helps us to build a model that predicts the sale\n"
-        "price of a houses based on the featured attributes. The dataset\n"
-        "is provided by [Kaggle.com](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data).\n\n"
-        
-    )
-
+    # "Business Requirements" section
     st.success(
-        "## Clients Business Requirements\n\n"
-        "The requirements are outlined below:\n"
-        "* Undertake a correlation and/or PPS study to investigate the most relevant variables linked to sale price.\n"
-        "* Deliver an ML system that can predict the summed sale price of our client Lydia's four inherited properties, as well as any other house in Ames, Iowa.\n"
-        "* Deliver either a conventional ML or Neural network based system.\n"
-        "* Develop a dashboard that allows our client to understand how house attributes inform sale price using data visualizations.\n"
-        "* Perform an extensive hyperparameter search for a given algorithm.\n\n"
+        f"The client presented 2 business requirements:\n"
+        f"* 1 - The client is interested in discovering how house attributes correlate with potential sale price.\n"
+        f"  * The client is expecting data visualizations of the correlated variables against the sale price.\n"
+        f"* 2 - The client would also like to establish the house sales price of 4 inherited houses "
+        f"and any other house in Ames, Iowa."
         )
 
+    # README file, for full project documentation
     st.info(
-        "**Dataset Description Table**\n\n"
-        " --- \n"
-        "|Variable|Meaning|Units|\n"
-        "|:----|:----|:----|\n"
-        "|1stFlrSF|First Floor square feet|(Min - Max > Sq. ft.) "
-        "334 - 4692|\n"
-        "|2ndFlrSF|Second floor square feet|(Min - Max > Sq. ft.) "
-        "0 - 2065|\n"
-        "|BedroomAbvGr|Bedrooms above grade (does NOT include "
-        "basement bedrooms)|(Min - Max > Bedrooms) 0 - 8|\n"
-        "|BsmtExposure|Refers to walkout or garden level walls|Gd: "
-        "Good Exposure; Av: Average Exposure; Mn: Mimimum Exposure; "
-        "No: No Exposure; None: No Basement|\n"
-        "|BsmtFinType1|Rating of basement finished area|GLQ: Good "
-        "Living Quarters; ALQ: Average Living Quarters; BLQ: Below "
-        "Average Living Quarters; Rec: Average Rec Room; LwQ: Low "
-        "Quality; Unf: Unfinshed; None: No Basement|\n"
-        "|BsmtFinSF1|Type 1 finished square feet|(Min - Max > Sq. ft.) "
-        "0 - 5644|\n"
-        "|BsmtUnfSF|Unfinished square feet of basement area|(Min - "
-        "Max > Sq. ft.) 0 - 2336|\n"
-        "|TotalBsmtSF|Total square feet of basement area|(Min - "
-        "Max > Sq. ft.) 0 - 6110|\n"
-        "|GarageArea|Size of garage in square feet|(Min - Max > "
-        "Sq. ft.) 0 - 1418|\n"
-        "|GarageFinish|Interior finish of the garage|Fin: Finished; "
-        "RFn: Rough Finished; Unf: Unfinished; None: No Garage|\n"
-        "|GarageYrBlt|Year garage was built|(Min - Max > Year) "
-        "1900 - 2010|\n"
-        "|GrLivArea|Above grade (ground) living area square feet|"
-        "(Min - Max > Sq. ft.) 334 - 5642|\n"
-        "|KitchenQual|Kitchen quality|Ex: Excellent; Gd: Good; TA: "
-        "Typical/Average; Fa: Fair; Po: Poor|\n"
-        "|LotArea| Lot size in square feet|(Min - Max > Sq. ft.) "
-        "1300 - 215245|\n"
-        "|LotFrontage| Linear feet of street connected to property|"
-        "(Min - Max > Lin. ft.) 21 - 313|\n"
-        "|MasVnrArea|Masonry veneer area in square feet|(Min - Max "
-        "> Sq. ft.) 0 - 1600|\n"
-        "|EnclosedPorch|Enclosed porch area in square feet|"
-        "(Min - Max > Sq. ft.) 0 - 286|\n"
-        "|OpenPorchSF|Open porch area in square feet|(Min - "
-        "Max > Sq. ft.) 0 - 547|\n"
-        "|OverallCond|Rates the overall condition of the house|"
-        "10: Very Excellent; 9: Excellent; 8: Very Good; 7: Good; "
-        "6: Above Average; 5: Average; 4: Below Average; 3: Fair; "
-        "2: Poor; 1: Very Poor|\n"
-        "|OverallQual|Rates the overall material and finish of the "
-        "house|10: Very Excellent; 9: Excellent; 8: Very Good; 7: "
-        "Good; 6: Above Average; 5: Average; 4: Below Average; 3: "
-        "Fair; 2: Poor; 1: Very Poor|\n"
-        "|WoodDeckSF|Wood deck area in square feet|(Min - Max > "
-        "Sq. ft.) 0 - 736|\n"
-        "|YearBuilt|Original construction date|(Min - Max > Year) "
-        "1872 - 2010|\n"
-        "|YearRemodAdd|Remodel date (same as construction date "
-        "if no remodeling or additions)|(Min - Max > Year) 1950 - 2010|\n"
-        "|SalePrice|Sale Price|(Min - Max > Price in $) 34900 - 755000|\n\n"
-        " ---"
+        f"* For additional information, please refer to this link for the project Readme"
+        f"[INSERT README URL HERE"
         )
+    
+    
+
+      
 

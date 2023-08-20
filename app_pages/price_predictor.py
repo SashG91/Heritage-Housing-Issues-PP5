@@ -25,7 +25,7 @@ def page_predict_sale_price_body():
 
     st.write("### ML Pipeline: Predict House Sale Price")
 
-    # display pipeline training summary conclusions
+    # display pipeline training summary
     st.info(
         f"* We used Linear Regressor model to predict sale price "
         f"for a single property\n"
@@ -37,4 +37,30 @@ def page_predict_sale_price_body():
         f"an R2 Score: 0.78 on the test set respectively.\n"
         f"* The clients requirement was for an R2 Score of 0.75\n"
         )
+    st.write("---")
+
+    # show pipeline steps
+    st.write("### ML pipeline to predict sale price")
+    st.write(sale_price_pipe)
+    st.write("---")
+
+    # show best features by statements
+    st.write("### The features the model was trained on and their importance:")
+    cnt = 0
+    for feat_str in feat_importance['Feature'].sort_values():
+        if cnt == 0:
+            new_str = feat_str
+            cnt = 1
+        else:
+            new_str = new_str + ', ' + feat_str 
+
+    st.write(new_str)
+    st.image(feat_importance_plot)
+    st.write("---")
+
+    # evaluate pipeline performance
+    st.write("### Evaluate Pipeline Performance")
+    regression_performance(X_train, y_train, X_test, y_test, sale_price_pipe)
+    regr_eval_plots = plt.imread(f"{path}/regression_evaluation_plots.png")
+    st.image(regr_eval_plots)
     st.write("---")

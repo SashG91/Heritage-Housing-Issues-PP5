@@ -41,4 +41,53 @@ def page_price_predictor_body():
         )
     st.write("---")
 
-    
+    # Live Data Production
+    check_var = False
+    if check_var:
+        check_variables_for_UI(price_features)
+
+    st.write("### Houses Price Predictor")
+    st.info(
+        f"* Input the values of a property that "
+        f" you wish to make a **price prediction**."
+        )
+    X_live = DrawInputsWidgets()
+
+    # Live Data Prediction
+    if st.button("Run Predictive Analysis"):
+        price_prediction = predict_sale_price(X_live,
+                                              price_features,
+                                              price_pipe)
+        # logic for displaying the targetted sale price
+        statement = (
+            f"The predicted selling price for this house "
+            f"is \u20AC{price_prediction}"
+            )
+
+        st.info(statement)
+
+
+def predict_inherited_house_price(price_pipe, price_features):
+    inherited = load_clean_data("inherited")
+    row_count = len(inherited)
+    inherited.index = range(1, row_count+1)
+    total_price = 0
+    for x in range(row_count):
+        X_live = inherited.iloc[[x]]
+        st.write(X_live)
+        price_prediction = predict_sale_price(X_live,
+                                              price_features,
+                                              price_pipe)
+        price_prediction = "%.2f" % price_prediction
+        statement = (
+            f"* Predicted selling price for targetted house "
+            f"{x+1} is \u20AC{price_prediction}"
+            )
+        total_price += float(price_prediction)
+        st.write(statement)
+        
+    return total_price
+
+def check_variables_for_UI(price_features):
+    import itertools
+

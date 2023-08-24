@@ -6,7 +6,7 @@ from the Churnometer Walkthrough Project 2.
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-from app_pages.page_price_study import page_predict_sales_price
+from app_pages.page_predict_sales_price import page_predict_sales_price
 from src.manage_files import load_clean_data, load_pkl_file
 from src.pipeline_perf_evaluation import regression_performance
 from src.pipeline_perf_evaluation import regression_evaluation_plots
@@ -14,8 +14,8 @@ from src.pipeline_perf_evaluation import regression_evaluation_plots
 def page_predict_sales_price():
 
     # load sale price pipeline files
-    ver = 'v2'
-    path = f"outputs/ml_pipeline/predict_saleprice/{ver}"
+    ver = 'v3'
+    path = f"outputs/ml_pipeline/predict_salesprice/{ver}"
     sale_price_pipe = load_pkl_file(f"{path}/best_regressor_pipeline.pkl")
     feat_importance = pd.read_csv(f"{path}/feature_importance.csv")
     feat_importance_plot = plt.imread(f"{path}/feature_importance.png")

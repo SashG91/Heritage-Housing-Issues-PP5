@@ -1,3 +1,8 @@
+'''
+Following content is taken from the Churnometer 
+Walkthrough Project 2 and adapted for this project.
+'''
+
 import streamlit as st
 
 from app_pages.page_multi_page import MultiPage

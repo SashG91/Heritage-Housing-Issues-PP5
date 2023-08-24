@@ -5,7 +5,7 @@ from the Churnometer Walkthrough Project 2.
 
 import streamlit as st
 import pandas as pd
-from src.file_management import load_clean_data, load_pkl_file
+from src.manage_files import load_clean_data, load_pkl_file
 from src.predictive_analysis_ui import predict_sale_price
 
 def page_price_predictor():
@@ -99,7 +99,7 @@ def check_variables_for_UI(price_features):
             itertools.chain(price_features)
             )
         )
-    st.write(f"* There are {len(combined features)} features "
+    st.write(f"* There are {len(combined features)} features"
              f"for the UI: \n\n {combined features}")
 
 

@@ -9,7 +9,7 @@ from app_pages.page_multi_page import MultiPage
 
 # load pages scripts
 from app_pages.page_summary import page_summary
-from app_pages.page_predict_sales_price import page_price_study
+from app_pages.page_price_study import page_price_study
 from app_pages.page_price_predictor import page_price_predictor
 from app_pages.page_hypothesis import page_hypothesis
 from app_pages.page_predict_sales_price import page_predict_sales_price

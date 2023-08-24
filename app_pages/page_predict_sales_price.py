@@ -6,7 +6,7 @@ from the Churnometer Walkthrough Project 2.
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-from page_price_study import app_pages.page_predict_sales_price
+from app_pages.page_price_study import page_predict_sales_price
 from src.manage_files import load_clean_data, load_pkl_file
 from src.pipeline_perf_evaluation import regression_performance
 from src.pipeline_perf_evaluation import regression_evaluation_plots

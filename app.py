@@ -16,10 +16,9 @@ from app_pages.page_predict_sales_price import page_predict_sales_price
 
 # Create an instance of the app
 app = MultiPage(app_name="House Price Predictor")
-
 # Add your app pages here using .add_page()
 app.add_page("Quick Project Summary", page_summary)
-app.add_page("House Sale Price Study", page_sale_price_study)
+app.add_page("House Sale Price Study", page_price_study)
 app.add_page("Price Predictor", page_price_predictor)
 app.add_page("Project Hypothesis", page_project_hypothesis)
 app.add_page("ML: House Sale Price Prediction", page_predict_sale_price)

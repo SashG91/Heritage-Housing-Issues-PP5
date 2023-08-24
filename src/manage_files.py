@@ -1,5 +1,6 @@
 '''
-Following content is taken from the Churnometer Walkthrough Project 2 and adapted for this project
+Following content is taken from the Churnometer 
+Walkthrough Project 2 and adapted for this project.
 '''
 import streamlit as st
 import pandas as pd

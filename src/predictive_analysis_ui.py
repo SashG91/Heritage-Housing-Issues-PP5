@@ -1,10 +1,11 @@
 '''
-Following content is taken from the Churnometer Walkthrough Project 2 and adapted for this project
+Following content is taken from the Churnometer 
+Walkthrough Project 2 and adapted for this project.
 '''
 import streamlit as st
 
 
-def predict_sale_price(X_live, features, pipeline):
+def predict_sales_price(X_live, features, pipeline):
 
     # from live data, subset features related to this pipeline
     X_live_sale_price = X_live.filter(features)

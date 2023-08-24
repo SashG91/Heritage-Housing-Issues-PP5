@@ -5,7 +5,7 @@ from the Churnometer Walkthrough Project 2.
 
 import streamlit as st
 
-def page_summary_body():
+def page_summary():
 
     st.write("### Quick Project Summary")
 

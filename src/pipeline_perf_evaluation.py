@@ -1,3 +1,8 @@
+'''
+Following content is taken from the Churnometer 
+Walkthrough Project 2 and adapted for this project.
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns

@@ -8,7 +8,7 @@ import pandas as pd
 from src.file_management import load_clean_data, load_pkl_file
 from src.predictive_analysis_ui import predict_sale_price
 
-def page_price_predictor_body():
+def page_price_predictor():
 
     # load predict sale price files
     ver = 'v2'

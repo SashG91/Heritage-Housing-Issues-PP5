@@ -5,13 +5,13 @@ from the Churnometer Walkthrough Project 2.
 
 import streamlit as st
 
-from src.file_management import load_housing_price_data
+from manage_files.py import load_housing_price_data
 
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_style("whitegrid")
 
-def page_sale_price_study_body():
+def page_price_study():
 
     # load data
     df = load_housing_price_data()

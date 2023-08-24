@@ -5,7 +5,7 @@ from the Churnometer Walkthrough Project 2.
 
 import streamlit as st
 
-def page_project_hypothesis_body():
+def page_hypothesis():
 
     st.success(
         f"### Project Hypothesis and Approval\n\n"

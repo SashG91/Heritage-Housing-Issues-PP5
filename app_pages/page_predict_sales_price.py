@@ -10,7 +10,7 @@ from src.file_management import load_clean_data, load_pkl_file
 from src.eval_pipeline_perf import regression_performance
 from src.eval_pipeline_perf import regression_evaluation_plots
 
-def page_predict_sale_price_body():
+def page_predict_sales_price():
 
     # load sale price pipeline files
     ver = 'v2'

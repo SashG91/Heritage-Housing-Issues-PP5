@@ -6,7 +6,6 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-
 @st.cache(suppress_st_warning=True, allow_output_mutation=True)
 def load_housing_price_data():
     path = "inputs/datasets/raw/house-price-20211124T154130Z-001/house-price/"

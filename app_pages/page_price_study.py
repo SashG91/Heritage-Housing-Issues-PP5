@@ -5,7 +5,7 @@ from the Churnometer Walkthrough Project 2.
 
 import streamlit as st
 
-from manage_files import load_housing_price_data
+from src.manage_files import load_housing_price_data
 
 import matplotlib.pyplot as plt
 import seaborn as sns

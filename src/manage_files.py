@@ -6,14 +6,14 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-@st.cache(suppress_st_warning=True, allow_output_mutation=True)
+@st.cache_data
 def load_housing_price_data():
     path = "inputs/datasets/raw/house-price-20211124T154130Z-001/house-price/"
     file = "house_prices_records.csv"
     df = pd.read_csv(path + file)
     return df
 
-@st.cache(suppress_st_warning=True, allow_output_mutation=True)
+@st.cache_data
 def load_clean_data(dataset):
     if dataset=="inherited":
         df = pd.read_csv("outputs/datasets/cleaned/clean_inherited_houses.csv")

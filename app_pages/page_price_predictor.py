@@ -37,7 +37,7 @@ def page_price_predictor():
     total_price = "%.2f" % total_price
     st.info(
         f"The sum total sale price for all your "
-        f"properties is \u20AC{total_price}"
+        f"properties is $ {total_price}"
         )
     st.write("---")
 
@@ -61,7 +61,7 @@ def page_price_predictor():
         # logic for displaying the targetted sale price
         statement = (
             f"The predicted selling price for this house "
-            f"is \u20AC{price_prediction}"
+            f"is ${price_prediction}"
             )
 
         st.info(statement)
@@ -81,7 +81,7 @@ def predict_inherited_house_price(price_pipe, price_features):
         price_prediction = "%.2f" % price_prediction
         statement = (
             f"* Predicted selling price for targetted house "
-            f"{x+1} is \u20AC{price_prediction}"
+            f"{x+1} is ${price_prediction}"
             )
         total_price += float(price_prediction)
         st.write(statement)

@@ -99,8 +99,8 @@ def check_variables_for_UI(price_features):
             itertools.chain(price_features)
             )
         )
-    st.write(f"* There are {len(combined features)} features"
-             f"for the UI: \n\n {combined features}")
+    st.write(f"* There are {len(combined_features)} features"
+             f"for the UI: \n\n {combined_features}")
 
 
 def DrawInputsWidgets():

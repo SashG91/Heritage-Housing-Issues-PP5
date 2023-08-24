@@ -20,7 +20,7 @@ app = MultiPage(app_name="House Price Predictor")
 app.add_page("Quick Project Summary", page_summary)
 app.add_page("House Sale Price Study", page_price_study)
 app.add_page("Price Predictor", page_price_predictor)
-app.add_page("Project Hypothesis", page_project_hypothesis)
-app.add_page("ML: House Sale Price Prediction", page_predict_sale_price)
+app.add_page("Project Hypothesis", page_hypothesis)
+app.add_page("ML: House Sale Price Prediction", page_predict_sales_price)
 
 app.run()  # Run the app

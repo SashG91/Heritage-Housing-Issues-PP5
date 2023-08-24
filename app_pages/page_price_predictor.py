@@ -6,13 +6,13 @@ from the Churnometer Walkthrough Project 2.
 import streamlit as st
 import pandas as pd
 from src.manage_files import load_clean_data, load_pkl_file
-from src.predictive_analysis_ui import predict_sale_price
+from src.predictive_analysis_ui import predict_sales_price
 
 def page_price_predictor():
 
     # load predict sale price files
-    ver = 'v2'
-    path = f"outputs/ml_pipeline/predict_saleprice/{ver}"
+    ver = 'v3'
+    path = f"outputs/ml_pipeline/predict_salesprice/{ver}"
 
     price_pipe = load_pkl_file(f"{path}/best_regressor_pipeline.pkl")
     price_features = (pd.read_csv(f"{path}/X_train.csv")
@@ -37,7 +37,7 @@ def page_price_predictor():
     total_price = "%.2f" % total_price
     st.info(
         f"The sum total sale price for all your "
-        f"properties is $ {total_price}"
+        f"properties is ${total_price}"
         )
     st.write("---")
 
@@ -55,7 +55,7 @@ def page_price_predictor():
 
     # Live Data Prediction
     if st.button("Run Predictive Analysis"):
-        price_prediction = predict_sale_price(X_live,
+        price_prediction = predict_sales_price(X_live,
                                               price_features,
                                               price_pipe)
         # logic for displaying the targetted sale price
@@ -75,7 +75,7 @@ def predict_inherited_house_price(price_pipe, price_features):
     for x in range(row_count):
         X_live = inherited.iloc[[x]]
         st.write(X_live)
-        price_prediction = predict_sale_price(X_live,
+        price_prediction = predict_sales_price(X_live,
                                               price_features,
                                               price_pipe)
         price_prediction = "%.2f" % price_prediction
@@ -110,8 +110,8 @@ def DrawInputsWidgets():
     percentageMin, percentageMax = 0.4, 2.0
 
     # Here we create input widgets for all focused features
-    col1, col2 = st.beta_columns(2)
-    col3, col4 = st.beta_columns(2)
+    col1, col2 = st.columns(2)
+    col3, col4 = st.columns(2)
    
     # Features to feed the ML pipeline
     # - values copied from check_variables_for_UI() result

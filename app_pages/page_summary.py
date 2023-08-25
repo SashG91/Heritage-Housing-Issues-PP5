@@ -9,17 +9,9 @@ def page_summary():
 
     st.write("### Quick Project Summary")
 
-     # "Introduction" section
-     st.info(
-        f"**Introduction**\n"
-        f"This is the specialisation project reuired for the Code Institute Full Stack Developer program." 
-        f"The project covers the topics of Machine Learning, Python development, business case consideration\n"
-        f"future API integration and dashboard development using Streamlit.")
-
-    
     # "Dataset Content" section
     st.info(
-        f"**Project Dataset**\n"
+        f"** Project Dataset**\n"
         f"* The project dataset was sourced from **[Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data)**.\n"
         f"* The full dataset consisted of almost 1.5 thousand rows and represents housing records from Ames, Iowa. "
         f"The dataset typically represents multiple house profiles or aspects of a property "

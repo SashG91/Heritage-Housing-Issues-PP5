@@ -15,7 +15,7 @@ def page_predict_sales_price():
 
     # load sale price pipeline files
     ver = 'v3'
-    path = f"outputs/ml_pipeline/predict_salesprice/{ver}"
+    path = f"outputs/ml_pipeline/{ver}"
     sale_price_pipe = load_pkl_file(f"{path}/best_regressor_pipeline.pkl")
     feat_importance = pd.read_csv(f"{path}/feature_importance.csv")
     feat_importance_plot = plt.imread(f"{path}/feature_importance.png")

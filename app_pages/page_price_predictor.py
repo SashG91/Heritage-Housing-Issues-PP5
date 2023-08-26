@@ -12,7 +12,7 @@ def page_price_predictor():
 
     # load predict sale price files
     ver = 'v3'
-    path = f"outputs/ml_pipeline/predict_salesprice/{ver}"
+    path = f"outputs/ml_pipeline/{ver}"
 
     price_pipe = load_pkl_file(f"{path}/best_regressor_pipeline.pkl")
     price_features = (pd.read_csv(f"{path}/X_train.csv")

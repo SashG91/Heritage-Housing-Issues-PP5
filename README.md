@@ -11,18 +11,17 @@ Link to the project dashboard is [here](https://sash-heritage-housing-issues-688
 
 ## **Business Requirements**
 
-A fictional client known as Lydia Doe, has inherited four properties from a family member in Ames, Iowa, She has requested help in predicting the selling price for the inherited properties.
-Lydia has concerns about inaccurate pricing estimation due to her limited knowledge of the local housing market. Therefore, she seeks the assistance of a data practitioner to predict the sales price of the inherited properties and any other residential properties in Ames, Iowa. The following can be deduced:
+The client Lydia Doe, has inherited four properties from a family member in Ames, Iowa, She has thus requested us to help in predicting the selling price of the properties. Due Lydia's limited knowledge of the local housing market she is worried about skewed pricing estimations. Thus, she seeks the expertise of a data practitioner to predict the sales price of the inherited properties and any other residential properties in Ames, Iowa. We therefore put forward the following client requests:
 
-* 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
-* 2 - The client is interested in predicting the house sale price of the four inherited houses and any other residential properties in Ames, Iowa.
+* 1 - The client is interested in discovering how the house attributes correlate with the sale price. There is an expectation for data visualisations of the correlated variables against the sale price to cofirm.
+* 2 - The client would like to predict the house sale price of the four inherited houses including any other residential properties in Ames, Iowa.
 
-To meet the clients needs, we will build a Data Web App that predicts the sales price from the four inherited houses based on their attributes. Additionally, we will develop a dashboard which would give Lydia an opportunity to explore how the house attributes correlate with the sale price using data visualizations.
+To fulfill the clients expectations, we will build an Application that predicts the sales price from the four inherited houses based on their attributes. Through a dashboard interface this will give Lydia an opportunity to explore how the house attributes correlate with the sale price using data visualizations.
   
 ## **Dataset Content**
 
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
-* The dataset has almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
+* The dataset consists of almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
 
 |Variable|Meaning|Units|
 |:----|:----|:----|
@@ -53,8 +52,10 @@ To meet the clients needs, we will build a Data Web App that predicts the sales 
 
 ## **Hypotheses and how to validate?**
 The following are the hypotheses that I have made for this project:
-1. I assume that a house with greater OverallQual would sell for a higher price. We could possible confirm this with a correlation analysis between OverallQual and SalePrice.
-2. I further assume that a house with a greater GrLivArea sells for a higher price. We could possible confirm this with a correlation analysis between GrLivArea and SalePrice can show this relationship.
+
+1. I assume that a house with greater OverallQual would sell for a higher price. We could possible confirm this with a linear correlation analysis between OverallQual and SalePrice.
+
+2. I also put forward the assumption that a house with a greater GrLivArea sells for a higher price. We could possible confirm this with a correlation analysis between GrLivArea and SalePrice can show this relationship.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 

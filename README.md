@@ -205,7 +205,7 @@ Using the final pipeline, the inherrited house records were introduced to so as 
 |House|OverallQual|GarageArea|GrLivArea|YearBuilt|Sale Price|
 |:----|:----|:----|:----|:----|:----|
 |1|5|730|896|1961|$130132.30|
-|2|6|312|1329|1958| $153067.17|
+|2|6|312|1329|1958|$153067.17|
 |3|5|482|1629|1997|$186517.88|
 |4|6|470|1604|1998|$180682.24|
 |||||Total Sum|$650399.59|

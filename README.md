@@ -85,30 +85,30 @@ CRISP-DM is a process model that serves as the foundation for a data science pro
 * Evaluation: Which model best satisfies the business's goals?
 * Deployment - How can stakeholders have access to the results?
 
+  ### **User Stories - Client**
+
+1. As a client, I want to see a set of visualizations that show the correlated variables against the sale price so that I can better understand the relationship between the features and the price.
+
+2. As a client, I want to be able to input most desirable features of a house and get an accurate prediction of the sale price so that I can make informed decisions about buying or selling properties in Ames, Iowa.
+
+3. As a client, I want to be able to see the predicted sale price of all inherited properties so that I can make informed decisions when deciding to sell them.
+
+4. As a client, I want a data application that is user-friendly and easy to use so that I can quickly and easily access the information I need to make informed decisions.
+
 ### **User Stories - Data Practitioner**
-From the projecct requirements, we can create a list of user stories for both the data practioner and the standard non-technical user.
+From the project requirements, we can create a list of user stories for either a data practioner or standard non-technical user.
 
-1. As a data practitioner, I want to import the public dataset provided by Lydia into our system so that I can build a model to predict the sales price of the four houses located in Ames, Iowa, USA.
+1. As a data practitioner, I want to import a public dataset into the system so that I can build a model to predict the sales price of the inherited houses located in Ames, Iowa.
 
-2. As a data practitioner, I want to clean and preprocess the dataset so that I can build an accurate model for predicting house prices.
+2. As a data practitioner, I want to clean and process the dataset so that I can build an accurate model for predicting house prices.
 
-3. As a data practitioner, I want to explore the dataset to understand the features and their relationships with the sale price so that I can create informative visualizations for the client.
+3. As a data practitioner, I want to explore the dataset to understand the features and their relationships with the sale price so that I can create valuable visualizations.
 
-4. As a data practitioner, I want to build a predictive model that accurately predicts the sale price of the four inherited properties as well as any other house in Ames, Iowa.
+4. As a data practitioner, I want to build a predictive model that accurately predicts the sale price of the inherited properties as well as any other house in Ames, Iowa.
 
-5. As a data practitioner, I want to optimize the model's hyperparameters to ensure that it is as accurate as possible.
+5. As a data practitioner, I want to optimize the model's hyperparameters to ensure that it is as accurate as possible to the clients expected requirements.
 
-6. As a data practitioner, I want to test the model's accuracy and ensure that it is reliable for predicting house prices.
-
-### **User Stories - Client**
-
-1. As a client, I want to see visualizations of the correlated variables against the sale price so that I can better understand the relationship between the features and the price.
-
-2. As a client, I want to be able to input the features of a house and get an accurate prediction of the sale price so that I can make informed decisions about buying or selling properties in Ames, Iowa.
-
-3. As a client, I want to be able to see the predicted sale price of each of the four inherited properties so that I can make informed decisions about selling them.
-
-4. As a client, I want the data web app to be user-friendly and easy to use so that I can quickly and easily access the information I need to make informed decisions.
+6. As a data practitioner, I want to test the model's accuracy and ensure that it is reliable for achieving our needs.
 
 ## ML Business Case
 #### Predict House Prices in Ames, Iowa
@@ -184,7 +184,7 @@ This page contains information about the ml pipeline.
 
 ## **Conclusion**
 ### **Summary of Findings**
-Belwo we can confirm if we have satisfied all business requirements:
+Below we can confirm if we have satisfied all business requirements:
 
 |Business Requirement|Satisfied?|
 |:---|:---|
@@ -198,6 +198,7 @@ Belwo we can confirm if we have satisfied all business requirements:
 * We can predict the prices of other houses in Ames, Iowa if desired.
 * We can predict the total sum of selling all four inherrited houses: $650399.59
 * We have satisfied all business requirements proposed for this case study.
+* We achieved an R2 score of 0.97 on the train set and 0.78 on the test set.
 
   ## **Results**
 Using the final pipeline, the inherrited house records were introduced to so as to yield the following results:

@@ -1,13 +1,11 @@
 # **House-Price-Predictor**
 <img width="1005" alt="Screenshot 2023-08-30 at 10 14 56" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/ba6c795b-de92-4ebe-aff6-795ee6a84aec">
 
-The goal for this project was to demonstrate both Machine Learning and Deep Learning concepts with respect to predicting the potential sales prices of homes using historical sale data for homes in Ames, Iowa using a dataset sourced from kaggle.com
-
 ## **Table of Contents**
 XXX
 
 ## **Introduction**
-This is the final project requirement for my Code Institute Full Stack Developer program. The project aims at targeting topics of Python applications, Deep Learning, Machine Learning, business case analysis, API integration and dashboard generation through the use of Streamlit.
+This is the final project requirement for my Code Institute Full Stack Developer program. The project aims at targeting topics of Python applications, Deep Learning, Machine Learning, business case analysis, API integration and dashboard generation through the use of Streamlit. The goal for this project is to help a client predict the potential sales prices of homes using historical sale data for homes in Ames, Iowa using a dataset sourced from kaggle.com.
 
 Link to the project dashboard is [here](https://sash-heritage-housing-issues-68817101fc6d.herokuapp.com/).
 

@@ -131,14 +131,20 @@ This section introduces the use of the Streamlit dashboard APP that would be del
 
 ## **Wireframes**
 <h3>Page 1: Quick Project Summary</h3>
+<img width="594" alt="Screenshot 2023-08-30 at 19 18 01" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/01e1262a-f2da-4751-a975-6d75990d007f">
 
 <h3>Page 2: House Sale Price Study</h3>
+<img width="608" alt="Screenshot 2023-08-30 at 19 18 15" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/0b5917fc-549d-430d-80d0-127184e2705e">
 
 <h3>Page 3: Predict House Sale Price</h3>
+<img width="631" alt="Screenshot 2023-08-30 at 19 18 36" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/f94e391f-b661-41e5-bf25-0b70175a4780">
+<img width="599" alt="Screenshot 2023-08-30 at 19 19 01" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/80adabcd-37d2-4732-921b-67fbbb0e0c51">
 
 <h3>Page 4: Project Hypothesis and Validation</h3>
+<img width="550" alt="Screenshot 2023-08-30 at 19 19 25" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/efe0e736-3366-430e-a273-27999bae14aa">
 
 <h3>Page 5: ML: House Sale Price Prediction </h3>
+<img width="488" alt="Screenshot 2023-08-30 at 19 19 40" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/9b577d1d-9a45-4f32-a2bd-9b0996f5bfa1">
 
 ### **Running the application**
 The streamlit app/dashboard is delpoyed through heroku, as discussed step-by-step in the deployment section below.

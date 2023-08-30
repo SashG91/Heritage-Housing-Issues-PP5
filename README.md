@@ -1,29 +1,29 @@
-# **House-Price-Predictor**
+##House-Price-Predictor
 <img width="1005" alt="Screenshot 2023-08-30 at 10 14 56" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/ba6c795b-de92-4ebe-aff6-795ee6a84aec">
 
-## **Table of Contents**
+## Table of Contents
 XXX
 
-## **Introduction**
+## Introduction
 This is the final project requirement for my Code Institute Full Stack Developer program. The project aims at targeting topics of Python applications, Deep Learning, Machine Learning, business case analysis, API integration and dashboard generation through the use of Streamlit. The goal for this project is to help a client predict the potential sales prices of homes using historical sale data for homes in Ames, Iowa using a dataset sourced from kaggle.com.
 
 Link to the project dashboard is [here](https://sash-heritage-housing-issues-68817101fc6d.herokuapp.com/).
 
-## **Business Requirements**
+## Business Requirements
 
 The client Lydia Doe, has inherited four properties from a family member and they are located in Ames, Iowa, She has thus requested us to help in predicting the selling price of the properties should she wish to put them on the market. Due to Lydia's limited knowledge of the local housing market she is worried about skewed pricing estimations which will result in losing more if she sells.. Thus, she seeks the expertise of a data practitioner to predict the sales price of the inherited properties and any other residential properties in Ames, Iowa. We therefore put forward the following client requests:
 
-* 1 - The client is interested in discovering how the house attributes correlate with the sale price. There is an expectation for data visualisations of the correlated variables against the sale price to cofirm.
+1 - The client is interested in discovering how the house attributes correlate with the sale price. There is an expectation for data visualisations of the correlated variables against the sale price to cofirm.
   
-* 2 - The client would like to predict the house sale price of the four inherited houses including any other residential properties in Ames, Iowa.
+2 - The client would like to predict the house sale price of the four inherited houses including any other residential properties in Ames, Iowa.
 
 To fulfill the clients expectations, we will build an Application (Dashboard) that predicts the sales price of the four inherited houses based on their attributes. The dashboard interface will give Lydia an opportunity to explore how the house attributes correlate with the sale price using data visualizations.
   
-## **Dataset Content**
+## Dataset Content
 
-* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data).
-* We then created user stories where predictive analytics can be applied in a workplace. 
-* The dataset consists of almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profiles made up of, but not limited to (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
+- The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data).
+- We then created user stories where predictive analytics can be applied in a workplace. 
+-The dataset consists of almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profiles made up of, but not limited to (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
 
 |Variable|Meaning|Units|
 |:----|:----|:----|
@@ -52,7 +52,7 @@ To fulfill the clients expectations, we will build an Application (Dashboard) th
 |YearRemodAdd|Remodel date (same as construction date if no remodelling or additions)|1950 - 2010|
 |SalePrice|Sale Price|34900 - 755000|
 
-## **Hypotheses for Case Study**
+## Hypotheses for Case Study
 The following are the hypotheses that I have made for this project:
 
 1. I assume that a house with a greater GrLivArea, first floor, basement and garage sells for a higher price. We could possible confirm this with a linear correlation analysis between OverallQual and SalePrice.
@@ -61,33 +61,33 @@ The following are the hypotheses that I have made for this project:
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
-**Business Requirement 1:** 
+## Business Requirement 1:*
 Data Visualization and Correlation.
 
-* We will examine the housing price statistics from the public dataset.
-* We will conduct a correlation and/or PPS study to investigate the most suitable variables correlating to the sale price.
-* We will present and summarize the data after visualizing these variables vs the sale price.
+- We will examine the housing price statistics from the public dataset.
+- We will conduct a correlation and/or PPS study to investigate the most suitable variables correlating to the sale price.
+- We will present and summarize the data after visualizing these variables vs the sale price.
 
-**Business Requirement 2:** 
+## Business Requirement 2:
 Regression and Data Analysis.
 
-* We will provide a ML algorithm that can accurately forecast the combined sales price of the four inherited houses.
-* We will map the relationships between the characteristics and the target using conventional ML.
-* Regression will be used to estimate the connection between the variables and the target.
-* Develop a dashboard that allows Lydia to explore how the house attributes correlated with the sale price using data visualizations.
+- We will provide a ML algorithm that can accurately forecast the combined sales price of the four inherited houses.
+- We will map the relationships between the characteristics and the target using conventional ML.
+- Regression will be used to estimate the connection between the variables and the target.
+- Develop a dashboard that allows Lydia to explore how the house attributes correlated with the sale price using data visualizations.
 
 <h2>The CRISP-DM (Cross Industry Standard Process for Data Mining)</h2>
 The flow and structure were combined with the Cross Industry Standard Process for Data Mining also known as Crisp-DM.
 CRISP-DM is a modelled process that builds the foundation for a data science process. It has to progress through six phases in the below order:
 
-* What does the business need in terms of business understanding?
-* Understanding data: What information do we have or need? How clean is it?
-* Data organization - How should the data be set up for modeling?
-* Modeling - Which modeling approaches should we use?
-* Evaluation: Which model best satisfies the business's goals?
-* Deployment - How can stakeholders have access to the results, via an API or Dashboard?
+- What does the business need in terms of business understanding?
+- Understanding data: What information do we have or need? How clean is it?
+- Data organization - How should the data be set up for modeling?
+- Modeling - Which modeling approaches should we use?
+- Evaluation: Which model best satisfies the business's goals?
+- Deployment - How can stakeholders have access to the results, via an API or Dashboard?
 
-  ### **User Stories - Client**
+  ### User Stories - Client:
 
 1. As a client, I want to see a set of visualizations that show the correlated variables against the sale price so that I can better understand the relationship between the features and the price.
 
@@ -97,7 +97,7 @@ CRISP-DM is a modelled process that builds the foundation for a data science pro
 
 4. As a client, I want a data application that is user-friendly and easy to use so that I can quickly and easily access the information I need to make informed decisions.
 
-### **User Stories - Data Practitioner**
+### User Stories - Data Practitioner:
 From the project requirements, we can create a list of user stories for either a data practioner or standard non-technical user.
 
 1. As a data practitioner, I want to import a public dataset into the system so that I can build a model to predict the sales price of the inherited houses located in Ames, Iowa.
@@ -115,21 +115,21 @@ From the project requirements, we can create a list of user stories for either a
 ## ML Business Case
 #### Predict House Prices in Ames, Iowa
 
-**Regression model**
+## Regression model
 
-* We are looking for a machine learning model that can help forecast the house prices in Ames, Iowa. Our client may utilize the model to make the best decision in terms of selling the four inherited residences. Our target variable is numerical and contains the expected house price depending on the features chosen form the dataset that may influence sales prices the most. We take into account a supervised, one-dimensional regression model.
-* Our desired result is to provide our client with trustworthy information so that our client can feel confident when making informed decisions for the homes and potentially and future homes in Ames, Iowa.
+-We are looking for a machine learning model that can help forecast the house prices in Ames, Iowa. Our client may utilize the model to make the best decision in terms of selling the four inherited residences. Our target variable is numerical and contains the expected house price depending on the features chosen form the dataset that may influence sales prices the most. We take into account a supervised, one-dimensional regression model.
+-Our desired result is to provide our client with trustworthy information so that our client can feel confident when making informed decisions for the homes and potentially and future homes in Ames, Iowa.
   
-  * The model success metrics are:
-* At least 0.7 for R2 score, on the train and test set (results can be found in Summary Section below).
-* The ML model is considered a failure if the model is wrong by more than 30% after 12 months, the prediction need to be consistent over a long period of time.
-* The output is defined as a numerical value for price in dollars. The prediction is made on the fly (not in batches).
+  - The model success metrics are:
+- At least 0.7 for R2 score, on the train and test set (results can be found in Summary Section below).
+- The ML model is considered a failure if the model is wrong by more than 30% after 12 months, the prediction need to be consistent over a long period of time.
+- The output is defined as a numerical value for price in dollars. The prediction is made on the fly (not in batches).
 
-## **Dashboard Design**
+## Dashboard Design
 
 This section introduces the use of the Streamlit dashboard APP that would be delivered to the client as requested.
 
-## **Wireframes**
+## Wireframes
 <h3>Page 1: Quick Project Summary</h3>
 <img width="594" alt="Screenshot 2023-08-30 at 19 18 01" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/01e1262a-f2da-4751-a975-6d75990d007f">
 
@@ -146,7 +146,7 @@ This section introduces the use of the Streamlit dashboard APP that would be del
 <h3>Page 5: ML: House Sale Price Prediction </h3>
 <img width="488" alt="Screenshot 2023-08-30 at 19 19 40" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/9b577d1d-9a45-4f32-a2bd-9b0996f5bfa1">
 
-### **Running the application**
+### Running the application
 The streamlit app/dashboard is delpoyed through heroku, as discussed step-by-step in the deployment section below.
 
 If you wish to run the the app locally prior to deployment we can run the following command in the terminal:
@@ -171,7 +171,7 @@ A page that displays the relationships between pricing and features.
 * Shows the correlation of targetted features and sales price.
 * A series of plots showing the relationship between each feature and sales price.
 
-### **Answers Business Requirement 1**
+### Answers Business Requirement 1:
 
 * We will inspect the data related to house prices.
 * To analyze the factors most likely to be connected with the sale price, we shall conduct a correlation research.
@@ -183,10 +183,10 @@ On this page the client may forecast the price of her inherited houses as well a
 * A summed value should all 4 inherited houses be sold.
 * Provides an House Price Predictor interface where a user can input 1stFlr | GrLivArea | GarageArea | YearBuilt in order to run a Predictive Analysis so as to determine the expected sale price of a house.
 
-### **Answers Business Requirement 2**
+### Answers Business Requirement 2:
   
-* Widgets to predict a house sale price based on the selected features.
-* Display estimated sale price on the inherite houses of the client and give a total sum of all 4 inherited houses.
+- Widgets to predict a house sale price based on the selected features.
+- Display estimated sale price on the inherite houses of the client and give a total sum of all 4 inherited houses.
 
 <h3>Page 4: Project Hypothesis and Validation</h3>
 This page answers the hypothesis we had before we started the project.
@@ -198,15 +198,15 @@ This page answers the hypothesis we had before we started the project.
 <h3>Page 5: ML: House Sale Price Prediction </h3>
 This page contains information about the ml pipeline.
 
-* Shows the ML Pipeline used.
-* Displays the best features the model was trained on.
-* Shows Performance and evaluation by confirming the clients R2 score and validated with the produced R2 score.
+- Shows the ML Pipeline used.
+- Displays the best features the model was trained on.
+- Shows Performance and evaluation by confirming the clients R2 score and validated with the produced R2 score.
 
-## **Unfixed Bugs**
-* No bugs of note.
+## Unfixed Bugs
+- No bugs of note.
 
-## **Conclusion**
-### **Summary of Findings**
+## Conclusion
+### Summary of Findings
 Below we can confirm if we have satisfied all business requirements:
 
 |Business Requirement|Satisfied?|
@@ -218,12 +218,12 @@ Below we can confirm if we have satisfied all business requirements:
 |Consider changing from regression to classification if dataset if variables allow for it.| :white_check_mark: |
 |Perform an extensive hyperparameter search for a given algorithm.| :white_check_mark: |
 
-* We can predict the prices of other houses in Ames, Iowa if desired.
-* We can predict the total sum of selling all four inherrited houses: $650399.59
-* We have satisfied all business requirements proposed for this case study.
-* We achieved an R2 score of 0.97 on the train set and 0.78 on the test set.
+- We can predict the prices of other houses in Ames, Iowa if desired.
+- We can predict the total sum of selling all four inherrited houses: $650399.59
+- We have satisfied all business requirements proposed for this case study.
+- We achieved an R2 score of 0.97 on the train set and 0.78 on the test set.
 
-  ## **Results**
+  ## Results
 Using the final pipeline, the inherrited house records were introduced to so as to yield the following results:
 
 |House|OverallQual|GarageArea|GrLivArea|YearBuilt|Sale Price|
@@ -234,12 +234,12 @@ Using the final pipeline, the inherrited house records were introduced to so as 
 |4|6|470|1604|1998|$180682.24|
 |||||Total Sum|$650399.59|
 
-## **Deployment**
+## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version 3.10.11
-* The project was deployed to Heroku using the following steps.
+- The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+- Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version 3.10.11
+- The project was deployed to Heroku using the following steps.
 1. Log in to Heroku and create an App
 2. At the Deploy tab, select GitHub as the deployment method.
 3. Select your repository name and click Search. Once it is found, click Connect.
@@ -247,17 +247,17 @@ Using the final pipeline, the inherrited house records were introduced to so as 
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
-## **Main Data Analysis and Machine Learning Libraries**
+## Main Data Analysis and Machine Learning Libraries
 1. [Heroku](https://dashboard.heroku.com/apps)
-    * Used to host the project for the clients dashboard.
+    - Used to host the project for the clients dashboard.
 2. [pyenv](https://github.com/pyenv/pyenv)
-    * Used to manage the multiple versions of python installed on my local machine and set the required python version for the virtual environment.
+   -Used to manage the multiple versions of python installed on my local machine and set the required python version for the virtual environment.
 4. [scikit learn](https://scikit-learn.org/stable/)
-    * Used to implement core ML functions.
+    - Used to implement core ML functions.
 5. [Feature Engine](https://feature-engine.trainindata.com/en/latest/index.html)
-    * Used for to facilitate core feature engineering and selection functions.
+    - Used for to facilitate core feature engineering and selection functions.
 
-## **Credits and Acknowledgements**
+## Credits and Acknowledgements
 1. Code Institute Data Analytics programme, guidance from the Walkthrough Project 2-Churnometer.
 2. The provided repository template found [here](https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues) was used for this project.
 3. The data source for this project is located [here](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data)

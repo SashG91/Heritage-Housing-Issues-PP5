@@ -2,7 +2,33 @@
 <img width="1005" alt="Screenshot 2023-08-30 at 10 14 56" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/ba6c795b-de92-4ebe-aff6-795ee6a84aec">
 
 ## Table of Contents
-XXX
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Business Requirements](#business-requirements)
+- [Dataset Content](#dataset-content)
+- [Hypotheses for Case Study](#hypotheses-for-case-study)
+- [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
+- [Business Requirement 1:*](#business-requirement-1--)
+- [Business Requirement 2:](#business-requirement-2-)
+  * [User Stories - Client:](#user-stories---client-)
+  * [User Stories - Data Practitioner:](#user-stories---data-practitioner-)
+- [ML Business Case](#ml-business-case)
+    + [Predict House Prices in Ames, Iowa](#predict-house-prices-in-ames--iowa)
+- [Regression model](#regression-model)
+- [Dashboard Design](#dashboard-design)
+- [Wireframes](#wireframes)
+  * [Running the application](#running-the-application)
+  * [Answers Business Requirement 1:](#answers-business-requirement-1-)
+  * [Answers Business Requirement 2:](#answers-business-requirement-2-)
+- [Unfixed Bugs](#unfixed-bugs)
+- [Conclusion](#conclusion)
+  * [Summary of Findings](#summary-of-findings)
+- [Results](#results)
+- [Deployment](#deployment)
+  * [Heroku](#heroku)
+- [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+- [Credits and Acknowledgements](#credits-and-acknowledgements)
+
 
 ## Introduction
 This is the final project requirement for my Code Institute Full Stack Developer program. The project aims at targeting topics of Python applications, Deep Learning, Machine Learning, business case analysis, API integration and dashboard generation through the use of Streamlit. The goal for this project is to help a client predict the potential sales prices of homes using historical sale data for homes in Ames, Iowa using a dataset sourced from kaggle.com.

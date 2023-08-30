@@ -1,4 +1,6 @@
 # **House-Price-Predictor**
+<img width="1005" alt="Screenshot 2023-08-30 at 10 14 56" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/ba6c795b-de92-4ebe-aff6-795ee6a84aec">
+
 The goal of this project is to demonstrate both Machine Learning and Deep Learning concepts with respect to predicting the price of houses for sale using historical sale data for homes in Ames, Iowa using a dataset sourced from kaggle.com
 
 ## **Table of Contents**

@@ -16,8 +16,8 @@ def page_hypothesis():
 
         f"* 1. I assume that the ground floor "
         f"living area, first floor, basement and the garage, play a "
-        f"key role in determining sale price.\n"
+        f"key role in determining the sale price.\n"
         f"* 2. The year the house was built and the overall quality "
-        f"of materials used and the finishes in the house also play a "
-        f"significant role in determining house price.\n"
+        f"of materials used (finishes) in the house also play a "
+        f"significant role in determining houses sales price.\n"
     )

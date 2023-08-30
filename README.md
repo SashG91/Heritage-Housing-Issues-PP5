@@ -132,7 +132,15 @@ From the project requirements, we can create a list of user stories for either a
 This section introduces the use of the Streamlit dashboard APP that would be delivered to the client as requested.
 
 ## **Wireframes**
-XXX
+<h3>Page 1: Quick Project Summary</h3>
+
+<h3>Page 2: House Sale Price Study</h3>
+
+<h3>Page 3: Predict House Sale Price</h3>
+
+<h3>Page 4: Project Hypothesis and Validation</h3>
+
+<h3>Page 5: ML: House Sale Price Prediction </h3>
 
 ### **Running the application**
 The streamlit app/dashboard is delpoyed through heroku, as discussed step-by-step in the deployment section below.

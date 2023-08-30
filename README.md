@@ -11,18 +11,19 @@ Link to the project dashboard is [here](https://sash-heritage-housing-issues-688
 
 ## **Business Requirements**
 
-The client Lydia Doe, has inherited four properties from a family member in Ames, Iowa, She has thus requested us to help in predicting the selling price of the properties. Due Lydia's limited knowledge of the local housing market she is worried about skewed pricing estimations. Thus, she seeks the expertise of a data practitioner to predict the sales price of the inherited properties and any other residential properties in Ames, Iowa. We therefore put forward the following client requests:
+The client Lydia Doe, has inherited four properties from a family member and they are located in Ames, Iowa, She has thus requested us to help in predicting the selling price of the properties should she wish to put them on the market. Due to Lydia's limited knowledge of the local housing market she is worried about skewed pricing estimations which will result in losing more if she sells.. Thus, she seeks the expertise of a data practitioner to predict the sales price of the inherited properties and any other residential properties in Ames, Iowa. We therefore put forward the following client requests:
 
 * 1 - The client is interested in discovering how the house attributes correlate with the sale price. There is an expectation for data visualisations of the correlated variables against the sale price to cofirm.
   
 * 2 - The client would like to predict the house sale price of the four inherited houses including any other residential properties in Ames, Iowa.
 
-To fulfill the clients expectations, we will build an Application that predicts the sales price from the four inherited houses based on their attributes. Through a dashboard interface this will give Lydia an opportunity to explore how the house attributes correlate with the sale price using data visualizations.
+To fulfill the clients expectations, we will build an Application (Dashboard) that predicts the sales price of the four inherited houses based on their attributes. The dashboard interface will give Lydia an opportunity to explore how the house attributes correlate with the sale price using data visualizations.
   
 ## **Dataset Content**
 
-* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
-* The dataset consists of almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
+* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data).
+* We then created user stories where predictive analytics can be applied in a workplace. 
+* The dataset consists of almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profiles made up of, but not limited to (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
 
 |Variable|Meaning|Units|
 |:----|:----|:----|
@@ -56,15 +57,15 @@ The following are the hypotheses that I have made for this project:
 
 1. I assume that a house with a greater GrLivArea sells for a higher price. We could possible confirm this with a linear correlation analysis between OverallQual and SalePrice.
 
-2. I also put forward that the YearBuilt date and the overall quality of materials (finishes) affects the sales price.  We could possible confirm this with a correlation analysis between YearBuilt and SalePrice can show this relationship.
+2. I also put forward that the YearBuilt date and the OverallQual of materials (finishes) affects the sales price.  We could possible confirm this with a correlation analysis between YearBuilt and SalePrice can show this relationship.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
 **Business Requirement 1:** 
 Data Visualization and Correlation.
 
-* We will examine the housing price statistics.
-* We will conduct a correlation and/or PPS study to investigate the most suitable variables correlated to the sale price.
+* We will examine the housing price statistics from the public dataset.
+* We will conduct a correlation and/or PPS study to investigate the most suitable variables correlating to the sale price.
 * We will present and summarize the data after visualizing these variables vs the sale price.
 
 **Business Requirement 2:** 
@@ -77,7 +78,7 @@ Regression and Data Analysis.
 
 <h2>The CRISP-DM (Cross Industry Standard Process for Data Mining)</h2>
 The flow and structure were combined with the Cross Industry Standard Process for Data Mining also known as Crisp-DM.
-CRISP-DM is a process model that serves as the foundation for a data science process. It proceeds through six phases in this order:
+CRISP-DM is a modelled process that builds the foundation for a data science process. It has to progress through six phases in the below order:
 
 * What does the business need in terms of business understanding?
 * Understanding data: What information do we have or need? How clean is it?
@@ -123,7 +124,6 @@ From the project requirements, we can create a list of user stories for either a
 * At least 0.7 for R2 score, on the train and test set (results can be found in Summary Section below).
 * The ML model is considered a failure if the model is wrong by more than 30% after 12 months, the prediction need to be consistent over a long period of time.
 * The output is defined as a numerical value for price in dollars. The prediction is made on the fly (not in batches).
-
 
 ## **Dashboard Design**
 
@@ -181,12 +181,12 @@ This page answers the hypothesis we had before we started the project.
 
 2. The second hypothesis is that the YearBuilt date and the overall quality of materials (finishes) affects the sales price. After our study, we saw a weak link between these qualities; nevertheless, there is no clear data to support this.
 
-<h3>Page 5: ML Model Performance</h3>
+<h3>Page 5: ML: House Sale Price Prediction </h3>
 This page contains information about the ml pipeline.
 
 * Shows the ML Pipeline used.
 * Displays the best features the model was trained on.
-* Shows Performance and evaluation.
+* Shows Performance and evaluation by confirming the clients R2 score and validated with the produced R2 score.
 
 ## **Unfixed Bugs**
 * No bugs of note.
@@ -245,8 +245,8 @@ Using the final pipeline, the inherrited house records were introduced to so as 
 
 ## **Credits and Acknowledgements**
 1. Code Institute Data Analytics programme, guidance from the Walkthrough Project 2-Churnometer.
-2. The provided repository template found at "https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues" was used for this project.
+2. The provided repository template found [here](https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues) was used for this project.
 3. The data source for this project is located [here](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data)
-4. Stack overflow for guidance on converting to a standalone dataframe.
-5. My mentor Alex Konovalov for his patience and expertise during the process.
-6. Code institute peer Adam Boley for setting me on the correct track with timelines and checkpoints.
+4. Stack overflow for guidance on converting a single dataframe.
+5. My mentor Alex Konovalov for his patience and expertise during the process and every mentor meeting.
+6. Code institute peer Adam Boley for setting me on the correct track with timelines and always checking in to see if i've made steady progress.

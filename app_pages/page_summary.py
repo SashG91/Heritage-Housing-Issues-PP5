@@ -11,7 +11,7 @@ def page_summary():
 
     # "Dataset Content" section
     st.info(
-        f"** Project Dataset**\n"
+        f"**Project Dataset**\n"
         f"* The project dataset was sourced from **[Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data)**.\n"
         f"* The full dataset consisted of almost 1.5 thousand rows and represents housing records from Ames, Iowa. "
         f"The dataset typically represents multiple house profiles or aspects of a property "

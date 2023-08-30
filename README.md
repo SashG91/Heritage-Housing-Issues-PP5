@@ -55,7 +55,7 @@ To fulfill the clients expectations, we will build an Application (Dashboard) th
 ## **Hypotheses for Case Study**
 The following are the hypotheses that I have made for this project:
 
-1. I assume that a house with a greater GrLivArea sells for a higher price. We could possible confirm this with a linear correlation analysis between OverallQual and SalePrice.
+1. I assume that a house with a greater GrLivArea, first floor, basement and garage sells for a higher price. We could possible confirm this with a linear correlation analysis between OverallQual and SalePrice.
 
 2. I also put forward that the YearBuilt date and the OverallQual of materials (finishes) affects the sales price.  We could possible confirm this with a correlation analysis between YearBuilt and SalePrice can show this relationship.
 

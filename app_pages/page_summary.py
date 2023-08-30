@@ -29,8 +29,8 @@ def page_summary():
 
     # README file, for full project documentation
     st.info(
-        f"* For additional information, please refer to this link for the project Readme"
-        f"[https://github.com/SashG91/Heritage-Housing-Issues-PP5/blob/main/README.md]"
+        f"* For additional information, please refer to this link below for the project Readme"
+        f"[Project README file](https://github.com/SashG91/Heritage-Housing-Issues-PP5/blob/main/README.md)"
         )
     
     st.info(

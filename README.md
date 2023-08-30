@@ -123,32 +123,6 @@ From the projecct requirements, we can create a list of user stories for both th
 * The ML model is considered a failure if the model is wrong by more than 30% after 12 months, the prediction need to be consistent over a long period of time.
 * The output is defined as a numerical value for price in dollars. The prediction is made on the fly (not in batches).
 
-### **Summary of Findings**
-To wrap up this project, it would be suitable to check if we have satisfied all business requirements:
-
-|Business Requirement|Satisfied?|
-|:---|:---|
-|Perform a correlation and/or PPS study to investigate the most relevant variables correlated to the sale price.| :white_check_mark: |
-|Deliver an ML system that can predict the summed sale price of Lydia's four inherited properties, as well as any other house in Ames, Iowa.| :white_check_mark: |
-|Deliver either a conventional ML or Neural network based system.| :white_check_mark: |
-|Develop a dashboard that allows our client (Lydia Doe) explore how the house attributes correlated with the sale price using data visualizations.| :white_check_mark: |
-|Consider changing from regression to classification if suitable/required.| :white_check_mark: |
-|Perform an extensive hyperparameter search for a given algorithm.| :white_check_mark: |
-
-* We can predict the prices of other houses in Ames, Iowa.
-* We can predict the sum of selling all four inherrited houses: $XXX
-* We have satisfied all business requirements put forward for this case study.
-
-  ## **Results**
-Using the final pipeline, the inherrited house records were introduced to so as to yield the following results:
-
-|House|OverallQual|GarageArea|GrLivArea|YearBuilt|Sale Price|
-|:----|:----|:----|:----|:----|:----|
-|1|4|730|896|1961|$XXX|
-|2|5|312|1329|1958| $XXX|
-|3|4|482|1629|1997|$XXX|
-|4|5|470|1604|1998|$XXX|
-|||||Total Sum|$XXX|
 
 ## **Dashboard Design**
 
@@ -206,7 +180,35 @@ This page contains information about the ml pipeline.
 * Shows Performance and evaluation.
 
 ## **Unfixed Bugs**
-* No known bugs of note.
+* No bugs of note.
+
+## **Conclusion**
+### **Summary of Findings**
+Belwo we can confirm if we have satisfied all business requirements:
+
+|Business Requirement|Satisfied?|
+|:---|:---|
+|Perform a correlation study to investigate the most relevant variables correlated to the sale price.| :white_check_mark: |
+|Produce an ML system that can predict the summed sale price of four inherited properties, as well as any other house in Ames, Iowa.| :white_check_mark: |
+|Deliver either a conventional ML or Neural network based system.| :white_check_mark: |
+|Develop a dashboard that allows our client to explore how the house attributes correlated with the sale price through data visualizations.| :white_check_mark: |
+|Consider changing from regression to classification if dataset if variables allow for it.| :white_check_mark: |
+|Perform an extensive hyperparameter search for a given algorithm.| :white_check_mark: |
+
+* We can predict the prices of other houses in Ames, Iowa if desired.
+* We can predict the total sum of selling all four inherrited houses: $650399.59
+* We have satisfied all business requirements proposed for this case study.
+
+  ## **Results**
+Using the final pipeline, the inherrited house records were introduced to so as to yield the following results:
+
+|House|OverallQual|GarageArea|GrLivArea|YearBuilt|Sale Price|
+|:----|:----|:----|:----|:----|:----|
+|1|5|730|896|1961|$130132.30|
+|2|6|312|1329|1958| $153067.17|
+|3|5|482|1629|1997|$186517.88|
+|4|6|470|1604|1998|$180682.24|
+|||||Total Sum|$650399.59|
 
 ## **Deployment**
 ### Heroku

@@ -7,13 +7,14 @@ XXX
 ## **Introduction**
 This is the final project requirement for my Code Institute Full Stack Developer program. The project aims at targeting topics of Python applications, Deep Learning, Machine Learning, business case analysis, API integration and dashboard generation through the use of Streamlit.
 
-Link to the project dashboard is [here](https://sash-heritage-housing-issues-68817101fc6d.herokuapp.com/)
+Link to the project dashboard is [here](https://sash-heritage-housing-issues-68817101fc6d.herokuapp.com/).
 
 ## **Business Requirements**
 
 The client Lydia Doe, has inherited four properties from a family member in Ames, Iowa, She has thus requested us to help in predicting the selling price of the properties. Due Lydia's limited knowledge of the local housing market she is worried about skewed pricing estimations. Thus, she seeks the expertise of a data practitioner to predict the sales price of the inherited properties and any other residential properties in Ames, Iowa. We therefore put forward the following client requests:
 
 * 1 - The client is interested in discovering how the house attributes correlate with the sale price. There is an expectation for data visualisations of the correlated variables against the sale price to cofirm.
+  
 * 2 - The client would like to predict the house sale price of the four inherited houses including any other residential properties in Ames, Iowa.
 
 To fulfill the clients expectations, we will build an Application that predicts the sales price from the four inherited houses based on their attributes. Through a dashboard interface this will give Lydia an opportunity to explore how the house attributes correlate with the sale price using data visualizations.
@@ -50,32 +51,32 @@ To fulfill the clients expectations, we will build an Application that predicts 
 |YearRemodAdd|Remodel date (same as construction date if no remodelling or additions)|1950 - 2010|
 |SalePrice|Sale Price|34900 - 755000|
 
-## **Hypotheses and how to validate?**
+## **Hypotheses for Case Study**
 The following are the hypotheses that I have made for this project:
 
-1. I assume that a house with greater OverallQual would sell for a higher price. We could possible confirm this with a linear correlation analysis between OverallQual and SalePrice.
+1. I assume that a house with a greater GrLivArea sells for a higher price. We could possible confirm this with a linear correlation analysis between OverallQual and SalePrice.
 
-2. I also put forward the assumption that a house with a greater GrLivArea sells for a higher price. We could possible confirm this with a correlation analysis between GrLivArea and SalePrice can show this relationship.
+2. I also put forward that the YearBuilt date and the overall quality of materials (finishes) affects the sales price.  We could possible confirm this with a correlation analysis between YearBuilt and SalePrice can show this relationship.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
 **Business Requirement 1:** 
-Data Visualization and Correlation
+Data Visualization and Correlation.
 
 * We will examine the housing price statistics.
-* We will conduct a correlation and/or PPS study to investigate the most relevant variables correlated to the sale price.
+* We will conduct a correlation and/or PPS study to investigate the most suitable variables correlated to the sale price.
 * We will present and summarize the data after visualizing these variables vs the sale price.
 
 **Business Requirement 2:** 
-Regression and Data Analysis
+Regression and Data Analysis.
 
 * We will provide a ML algorithm that can accurately forecast the combined sales price of the four inherited houses.
 * We will map the relationships between the characteristics and the target using conventional ML.
 * Regression will be used to estimate the connection between the variables and the target.
 * Develop a dashboard that allows Lydia to explore how the house attributes correlated with the sale price using data visualizations.
 
-<h2>The CRISP-DM (CRoss Industry Standard Process for Data Mining)</h2>
-The flow and structure were combined with the CRoss Industry Standard Process for Data Mining also known as Crisp-DM.
+<h2>The CRISP-DM (Cross Industry Standard Process for Data Mining)</h2>
+The flow and structure were combined with the Cross Industry Standard Process for Data Mining also known as Crisp-DM.
 CRISP-DM is a process model that serves as the foundation for a data science process. It proceeds through six phases in this order:
 
 * What does the business need in terms of business understanding?
@@ -83,7 +84,7 @@ CRISP-DM is a process model that serves as the foundation for a data science pro
 * Data organization - How should the data be set up for modeling?
 * Modeling - Which modeling approaches should we use?
 * Evaluation: Which model best satisfies the business's goals?
-* Deployment - How can stakeholders have access to the results?
+* Deployment - How can stakeholders have access to the results, via an API or Dashboard?
 
   ### **User Stories - Client**
 
@@ -108,25 +109,25 @@ From the project requirements, we can create a list of user stories for either a
 
 5. As a data practitioner, I want to optimize the model's hyperparameters to ensure that it is as accurate as possible to the clients expected requirements.
 
-6. As a data practitioner, I want to test the model's accuracy and ensure that it is reliable for achieving our needs.
+6. As a data practitioner, I want to test the model's efficiency and accuracy and ensure that it is reliable for achieving our needs.
 
 ## ML Business Case
 #### Predict House Prices in Ames, Iowa
 
 **Regression model**
 
-* We are looking for a machine learning model that can forecast house prices in Ames, Iowa. Lydia may utilize the model to make the best decision with the four inherited residences. The target variable is numerical and contains the expected house price depending on the features chosen. We take into account a supervised, one-dimensional regression model.
-* Our desired result is to provide Lydia trustworthy information so she may feel confident making wise decisions for her homes and potentially future homes.
+* We are looking for a machine learning model that can help forecast the house prices in Ames, Iowa. Our client may utilize the model to make the best decision in terms of selling the four inherited residences. Our target variable is numerical and contains the expected house price depending on the features chosen form the dataset that may influence sales prices the most. We take into account a supervised, one-dimensional regression model.
+* Our desired result is to provide our client with trustworthy information so that our client can feel confident when making informed decisions for the homes and potentially and future homes in Ames, Iowa.
   
   * The model success metrics are:
-* At least 0.7 for R2 score, on the train and test set.
+* At least 0.7 for R2 score, on the train and test set (results can be found in Summary Section below).
 * The ML model is considered a failure if the model is wrong by more than 30% after 12 months, the prediction need to be consistent over a long period of time.
 * The output is defined as a numerical value for price in dollars. The prediction is made on the fly (not in batches).
 
 
 ## **Dashboard Design**
 
-This section introduces the use of the streamlit dashboard app that would be delivered to the client as requested.
+This section introduces the use of the Streamlit dashboard APP that would be delivered to the client as requested.
 
 ## **Wireframes**
 XXX
@@ -147,9 +148,14 @@ A high-level summary of the project, including:
 
 * Information on the dataset
 * The business and client (Lydia Doe's) requirements.
+* Dataset guidelines.
 
 <h3>Page 2: House Sale Price Study</h3>
 A page that displays the relationships between pricing and features.
+* Inspection of house price data in table format (snapshot)
+* Lists the most suitable features to be used from the dataset.
+* Shows the correlation of targetted features and sales price.
+* A series of plots showing the relationship between each feature and sales price.
 
 ### **Answers Business Requirement 1**
 
@@ -159,6 +165,9 @@ A page that displays the relationships between pricing and features.
 
 <h3>Page 3: Predict House Sale Price</h3>
 On this page the client may forecast the price of her inherited houses as well as the sale price of any house in Ames, Iowa.
+* Provides the details of each inherited house individually and their expected sale price.
+* A summed value should all 4 inherited houses be sold.
+* Provides an House Price Predictor interface where a user can input 1stFlr | GrLivArea | GarageArea | YearBuilt in order to run a Predictive Analysis so as to determine the expected sale price of a house.
 
 ### **Answers Business Requirement 2**
   
@@ -168,9 +177,9 @@ On this page the client may forecast the price of her inherited houses as well a
 <h3>Page 4: Project Hypothesis and Validation</h3>
 This page answers the hypothesis we had before we started the project.
 
-1. The first hypothesis is that properties with a larger GrLivArea sell for a higher price. In our study of house prices, we discovered that there was a significant association using both the pearson and spearman methodologies, supporting the hypothesis.
+1. The first hypothesis is that a house with a greater GrLivArea sells for a higher price. In our study of house prices, we discovered that there was a significant association using both the pearson and spearman methodologies, supporting the hypothesis.
 
-2. The second hypothesis is that a house's overall condition improves with younger YearBuilt dates. After our study, we saw a weak link between these qualities; nevertheless, there is no data to support this actual claim.
+2. The second hypothesis is that the YearBuilt date and the overall quality of materials (finishes) affects the sales price. After our study, we saw a weak link between these qualities; nevertheless, there is no clear data to support this.
 
 <h3>Page 5: ML Model Performance</h3>
 This page contains information about the ml pipeline.

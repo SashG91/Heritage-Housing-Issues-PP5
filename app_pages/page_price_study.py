@@ -25,8 +25,8 @@ def page_price_study():
     st.info(
         f"* The client is interested in discovering how the house attributes "
         f"correlate with the sale price.\n"
-        f"* Therefore, the client expects data visualizations of the "
-        f"correlated variables against the sale price to show that."
+        f"* Thus, the client expects data visualizations of the "
+        f"correlated variables against the sale price to confirm."
         )
     
     # inspect data
@@ -43,7 +43,7 @@ def page_price_study():
     st.write(
         f"* Using the Pearson and Spearman methods a correlation study was undertaken "
         f"to better understand how the identified variables correlate to house sale prices.\n"
-        f"* The most correlated variable were: \n"
+        f"* The most correlated variables extrapolated were: \n"
         f"  * **1stFlrSF, GarageArea, GrLivArea, OverallQual, TotalBsmtSF, YearBuilt**"
     )
 

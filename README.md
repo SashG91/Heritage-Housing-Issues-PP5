@@ -1,5 +1,6 @@
 # House-Price-Predictor
-<img width="1005" alt="Screenshot 2023-08-30 at 10 14 56" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/ba6c795b-de92-4ebe-aff6-795ee6a84aec">
+<img width="946" alt="Screenshot 2023-08-31 at 09 05 26" src="https://github.com/SashG91/Heritage-Housing-Issues-PP5/assets/97494070/3b4bb369-59a4-4cbc-9d4f-51464deb043f">
+
 
 ## Table of Contents
 - [Introduction](#introduction)

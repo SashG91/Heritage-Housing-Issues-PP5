@@ -27,9 +27,9 @@ def page_summary():
         f"and any other house in Ames, Iowa."
         )
 
-    # README file, for full project documentation
+    # README file, for project documentation
     st.info(
-        f"* For additional information, please refer to this link below for the"
+        f"* For additional information, please refer to the link provided below for the"
         f"*[Project README file](https://github.com/SashG91/Heritage-Housing-Issues-PP5/blob/main/README.md)"
         )
     

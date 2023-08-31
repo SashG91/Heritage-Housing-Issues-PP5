@@ -86,7 +86,7 @@ The following are the hypotheses that I have made for this project:
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
-## Business Requirement 1:*
+## Business Requirement 1:
 Data Visualization and Correlation.
 
 - We will examine the housing price statistics from the public dataset.
